@@ -6,63 +6,105 @@
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Theme Management (Dark / Light Mode)
   const themeToggleBtn = document.getElementById('themeToggleBtn');
-  const themeIcon = themeToggleBtn.querySelector('i');
+  const mobileThemeToggleBtn = document.getElementById('mobileThemeToggleBtn');
+  const mobileThemeText = document.getElementById('mobileThemeText');
   
   // Check persisted theme or system preference
   const savedTheme = localStorage.getItem('dz_theme') || 'dark';
-  document.documentElement.setAttribute('data-theme', savedTheme);
-  updateThemeIcon(savedTheme);
+  applyTheme(savedTheme);
 
-  themeToggleBtn.addEventListener('click', () => {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    
-    document.documentElement.setAttribute('data-theme', newTheme);
-    localStorage.setItem('dz_theme', newTheme);
-    updateThemeIcon(newTheme);
-  });
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('dz_theme', theme);
 
-  function updateThemeIcon(theme) {
-    if (theme === 'light') {
-      themeIcon.className = 'fas fa-moon';
-      themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
-    } else {
-      themeIcon.className = 'fas fa-sun';
-      themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
+    // Update Desktop Theme Button
+    if (themeToggleBtn) {
+      const themeIcon = themeToggleBtn.querySelector('i');
+      if (themeIcon) {
+        themeIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+      }
+      themeToggleBtn.setAttribute('title', theme === 'light' ? 'Switch to Dark Mode' : 'Switch to Light Mode');
     }
+
+    // Update Mobile Drawer Theme Button
+    if (mobileThemeToggleBtn) {
+      const mobileIcon = mobileThemeToggleBtn.querySelector('i');
+      if (mobileIcon) {
+        mobileIcon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+      }
+      if (mobileThemeText) {
+        mobileThemeText.textContent = theme === 'light' ? 'Dark Mode' : 'Light Mode';
+      }
+    }
+  }
+
+  function toggleCurrentTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    const nextTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(nextTheme);
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', toggleCurrentTheme);
+  }
+  if (mobileThemeToggleBtn) {
+    mobileThemeToggleBtn.addEventListener('click', toggleCurrentTheme);
   }
 
   // 2. Sticky Navbar & Header Blur
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
+    if (window.scrollY > 40) {
       header.classList.add('scrolled');
     } else {
       header.classList.remove('scrolled');
     }
   });
 
-  // 3. Mobile Navigation Toggle
+  // 3. Mobile Navigation Toggle & Drawer Controller
   const mobileToggle = document.getElementById('mobileToggle');
   const navMenu = document.getElementById('navMenu');
 
+  function closeMobileDrawer() {
+    if (navMenu && mobileToggle) {
+      navMenu.classList.remove('active');
+      mobileToggle.classList.remove('active');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+  }
+
+  function openMobileDrawer() {
+    if (navMenu && mobileToggle) {
+      navMenu.classList.add('active');
+      mobileToggle.classList.add('active');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+  }
+
   if (mobileToggle && navMenu) {
     mobileToggle.addEventListener('click', () => {
-      navMenu.classList.toggle('active');
-      const icon = mobileToggle.querySelector('i');
-      if (navMenu.classList.contains('active')) {
-        icon.className = 'fas fa-times';
+      const isCurrentlyActive = navMenu.classList.contains('active');
+      if (isCurrentlyActive) {
+        closeMobileDrawer();
       } else {
-        icon.className = 'fas fa-bars';
+        openMobileDrawer();
       }
     });
 
-    // Close menu when clicking link
+    // Close menu when clicking any nav link
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', () => {
-        navMenu.classList.remove('active');
-        mobileToggle.querySelector('i').className = 'fas fa-bars';
+        closeMobileDrawer();
       });
+    });
+
+    // Close menu on pressing Escape key
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+        closeMobileDrawer();
+      }
     });
   }
 

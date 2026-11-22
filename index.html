@@ -72,7 +72,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   
   <!-- Custom Design System Stylesheet -->
-  <link rel="stylesheet" href="styles.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
@@ -87,24 +87,117 @@
   <header class="site-header">
     <div class="container">
       <div class="nav-wrapper">
-        <a href="#about" class="brand-logo">
+        <a href="#about" class="brand-logo" aria-label="Dawit Zewdu - Home">
           <div class="logo-badge">DZ</div>
-          <span>Dawit Zewdu</span>
+          <span class="brand-name">Dawit Zewdu</span>
         </a>
 
-        <!-- Navigation Links -->
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="#about" class="nav-link active">About</a></li>
-          <li><a href="#pillars" class="nav-link">Expertise</a></li>
-          <li><a href="#experience" class="nav-link">Experience</a></li>
-          <li><a href="#education" class="nav-link">Education</a></li>
-          <li><a href="#skills" class="nav-link">Skills</a></li>
-          <li><a href="#projects" class="nav-link">Case Studies</a></li>
-          <li><a href="#resume" class="nav-link">CV</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+        <!-- Main Navigation & Mobile Drawer -->
+        <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+          <!-- Mobile Drawer Header -->
+          <div class="drawer-header-mobile">
+            <div class="drawer-badge-pill">
+              <span class="pulse-dot"></span>
+              <span>Operations &bull; Project Management</span>
+            </div>
+          </div>
 
-        <!-- Navigation Action Buttons -->
+          <!-- Navigation Links List -->
+          <ul class="nav-links-list">
+            <li>
+              <a href="#about" class="nav-link active">
+                <span class="nav-num">01</span>
+                <span class="nav-label">About</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#pillars" class="nav-link">
+                <span class="nav-num">02</span>
+                <span class="nav-label">Expertise</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#experience" class="nav-link">
+                <span class="nav-num">03</span>
+                <span class="nav-label">Experience</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#education" class="nav-link">
+                <span class="nav-num">04</span>
+                <span class="nav-label">Education</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#skills" class="nav-link">
+                <span class="nav-num">05</span>
+                <span class="nav-label">Skills</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#projects" class="nav-link">
+                <span class="nav-num">06</span>
+                <span class="nav-label">Case Studies</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#resume" class="nav-link">
+                <span class="nav-num">07</span>
+                <span class="nav-label">Executive CV</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">
+                <span class="nav-num">08</span>
+                <span class="nav-label">Contact</span>
+                <i class="fas fa-chevron-right nav-arrow" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Mobile Drawer Footer Actions -->
+          <div class="drawer-footer-mobile">
+            <!-- Theme Toggle Bar -->
+            <div class="drawer-theme-row">
+              <span class="theme-row-label"><i class="fas fa-palette"></i> Interface Theme</span>
+              <button id="mobileThemeToggleBtn" class="drawer-theme-pill" aria-label="Toggle Dark or Light Mode">
+                <i class="fas fa-sun"></i>
+                <span id="mobileThemeText">Light Mode</span>
+              </button>
+            </div>
+
+            <!-- Primary CV Action -->
+            <a href="assets/Dawit_Zewdu_Menas_CV.pdf" class="drawer-cv-btn" download="Dawit_Zewdu_Menas_CV.pdf">
+              <i class="fas fa-arrow-down"></i>
+              <span>Download Executive CV (PDF)</span>
+            </a>
+
+            <!-- Quick Direct Contacts -->
+            <div class="drawer-socials-grid">
+              <a href="https://wa.me/251998892524" target="_blank" rel="noopener" class="drawer-social-btn whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                <span>WhatsApp</span>
+              </a>
+              <a href="https://t.me/Hey_Im_dave" target="_blank" rel="noopener" class="drawer-social-btn telegram">
+                <i class="fab fa-telegram-plane"></i>
+                <span>Telegram</span>
+              </a>
+              <a href="mailto:dawitzewdu00@gmail.com" class="drawer-social-btn email">
+                <i class="fas fa-envelope"></i>
+                <span>Email</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Navigation Action Buttons (Desktop actions + Mobile Hamburger) -->
         <div class="nav-actions">
           <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Toggle Dark / Light Theme" title="Switch Theme">
             <i class="fas fa-sun"></i>
@@ -113,8 +206,11 @@
             <i class="fas fa-arrow-down"></i>
             <span>CV</span>
           </a>
-          <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle mobile menu">
-            <i class="fas fa-bars"></i>
+          <button id="mobileToggle" class="mobile-toggle" aria-label="Toggle mobile navigation menu" aria-expanded="false">
+            <span class="hamburger-box">
+              <span class="hamburger-line top"></span>
+              <span class="hamburger-line bottom"></span>
+            </span>
           </button>
         </div>
       </div>
