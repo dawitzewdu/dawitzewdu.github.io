@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found | Dawit Zewdu Menas</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .not-found-wrapper {
+      min-height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .not-found-code {
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 900;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-indigo), var(--accent-pink));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 1rem;
+    }
+    .not-found-title {
+      font-size: clamp(1.5rem, 4vw, 2.25rem);
+      font-weight: 800;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+    }
+    .not-found-desc {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 520px;
+      margin-bottom: 2.5rem;
+      line-height: 1.6;
+    }
+    .not-found-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">
+          <div class="logo-badge">DZ</div>
+          <span>Dawit Zewdu</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="not-found-wrapper">
+    <div class="not-found-code">404</div>
+    <h1 class="not-found-title">Page Not Found</h1>
+    <p class="not-found-desc">
+      The page or document you are looking for has been moved, renamed, or is unavailable. You can return to the portfolio homepage or reach out directly.
+    </p>
+    <div class="not-found-actions">
+      <a href="index.html" class="btn-primary">
+        <i class="fas fa-home"></i>
+        <span>Return to Homepage</span>
+      </a>
+      <a href="https://wa.me/251998892524?text=Hi%20Dawit,%20I%20was%20browsing%20your%20site%20and%20hit%20a%20missing%20link." target="_blank" rel="noopener noreferrer" class="btn-secondary">
+        <i class="fab fa-whatsapp" style="color: #25D366;"></i>
+        <span>Message on WhatsApp</span>
+      </a>
+      <a href="assets/Dawit_Zewdu_Menas_CV.pdf" target="_blank" class="btn-secondary">
+        <i class="fas fa-file-pdf"></i>
+        <span>View Executive CV</span>
+      </a>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div>© 2026 <strong>Dawit Zewdu Menas</strong>. All rights reserved.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

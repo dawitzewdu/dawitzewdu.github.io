@@ -316,6 +316,11 @@ body {
   align-items: center;
 }
 
+.hero-content {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .hero-pill-badge {
   display: inline-flex;
   align-items: center;
@@ -469,6 +474,7 @@ body {
 .hero-social-strip {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1.25rem;
   color: var(--text-muted);
   font-size: 0.88rem;
@@ -501,8 +507,8 @@ body {
   height: 440px;
   border-radius: 28px;
   overflow: hidden;
-  box-shadow: var(--shadow-lg);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.65), 0 0 35px rgba(56, 189, 248, 0.2);
+  border: 2px solid rgba(56, 189, 248, 0.4);
   background: var(--bg-secondary);
 }
 
@@ -1136,6 +1142,71 @@ body {
   color: var(--accent-cyan);
 }
 
+.contact-actions-box {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contact-action-card {
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  transition: all var(--transition-fast);
+}
+
+.contact-action-card:hover {
+  border-color: var(--border-focus);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-action-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-action-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.contact-action-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.25;
+}
+
+.contact-action-desc {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+  margin-top: 0.25rem;
+}
+
+.quick-copy-strip {
+  display: flex;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
 .contact-form-box {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
@@ -1203,7 +1274,7 @@ textarea.form-control {
 ---------------------------------------------------------------- */
 @media (max-width: 1024px) {
   .hero-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     text-align: center;
     gap: 3rem;
   }
@@ -1279,7 +1350,74 @@ textarea.form-control {
     height: 350px;
   }
 
+  .hero-title {
+    font-size: clamp(1.85rem, 6.5vw, 2.5rem);
+    word-break: normal;
+    overflow-wrap: break-word;
+    text-wrap: balance;
+  }
+
+  .hero-pill-badge {
+    white-space: normal;
+    text-align: left;
+    max-width: 100%;
+    line-height: 1.35;
+    padding: 0.4rem 0.9rem;
+    font-size: 0.78rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-cta-group a {
+    width: 100%;
+    justify-content: center;
+  }
+
   .badge-top-right, .badge-bottom-left {
     display: none;
+  }
+}
+
+.badge-short {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .badge-full {
+    display: none;
+  }
+
+  .badge-short {
+    display: inline;
+  }
+
+  .hero-title {
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+  .hero-pill-badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.85rem;
+  }
+
+  .hero-tagline {
+    font-size: 0.88rem;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
   }
 }

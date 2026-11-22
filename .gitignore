@@ -2,5 +2,6 @@
 *.png
 *.jpg
 !assets/**
+!apple-touch-icon.png
 .DS_Store
 Thumbs.db
