@@ -1,0 +1,6 @@
+# Ignore screenshots and temporary captures
+*.png
+*.jpg
+!assets/**
+.DS_Store
+Thumbs.db
