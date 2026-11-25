@@ -430,6 +430,93 @@
       color: var(--text-muted);
     }
 
+    /* Hadley Designs Case Study & Video Showcase */
+    .case-study-section {
+      padding: 5rem 0 3.5rem;
+      border-top: 1px solid var(--border-subtle);
+      position: relative;
+    }
+    .case-study-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(255, 153, 0, 0.12);
+      border: 1px solid rgba(255, 153, 0, 0.3);
+      color: var(--accent-amazon);
+      font-size: 0.8rem;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 0.8rem;
+    }
+    .case-study-grid {
+      display: grid;
+      grid-template-columns: 1.25fr 1fr;
+      gap: 2.5rem;
+      align-items: flex-start;
+    }
+    @media (max-width: 992px) {
+      .case-study-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+    .video-card-wrapper {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 153, 0, 0.3);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      box-shadow: 0 15px 40px -10px rgba(0, 0, 0, 0.6);
+      position: relative;
+    }
+    .video-responsive-frame {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: #000;
+    }
+    .video-responsive-frame iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    .video-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 1.2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .case-study-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+    .cs-deliverable-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.5rem;
+      transition: var(--transition);
+    }
+    .cs-deliverable-card:hover {
+      border-color: rgba(255, 153, 0, 0.4);
+      background: var(--bg-card-hover);
+    }
+    .cs-deliverable-card.active-card {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: rgba(16, 185, 129, 0.05);
+    }
+
     /* Comparison Table: Operator vs CEO */
     .comparison-section {
       padding: 4rem 0;
@@ -964,6 +1051,7 @@
       </a>
       <div class="nav-links">
         <a href="#overview">Overview</a>
+        <a href="#case-study">Hadley Case Study</a>
         <a href="#philosophy">Catalog CEO</a>
         <a href="#competencies">Pillars</a>
         <a href="#experience">Case Studies</a>
@@ -1093,6 +1181,82 @@
           <div class="stat-number indigo">5+</div>
           <div class="stat-label">Trend Formats Launched</div>
           <div class="stat-desc">Identified from TikTok/Pinterest social listening and AI review scraping.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Case Study: Hadley Designs -->
+  <section class="case-study-section" id="case-study">
+    <div class="container">
+      <div class="section-header">
+        <div class="case-study-badge">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          Hadley Designs Candidate Finalist Deliverable
+        </div>
+        <h2 class="section-title">Amazon Brand Acceleration Plan &amp; Executive Presentation</h2>
+        <p class="section-subtitle">Real-world case study solving Q4 catalog data anomalies, shelf competitive dynamics, and automated ASIN scalability.</p>
+      </div>
+
+      <div class="case-study-grid">
+        <!-- Left: Responsive Loom Video Player -->
+        <div class="video-card-wrapper">
+          <div class="video-responsive-frame">
+            <iframe src="https://www.loom.com/embed/9d818a069fb54bb981b2cec2f3b6d93a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          <div class="video-card-footer">
+            <div>
+              <div style="font-weight: 700; font-size: 0.95rem; color: #fff;">🎬 3-Minute Executive Pitch</div>
+              <div style="font-size: 0.8rem; color: var(--text-muted);">Addressed directly to the Leader of the Amazon Team</div>
+            </div>
+            <a href="https://www.loom.com/share/9d818a069fb54bb981b2cec2f3b6d93a" target="_blank" class="btn btn-outline" style="font-size: 0.8rem; padding: 0.45rem 0.85rem;">
+              Open in Loom ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Deliverables & Strategic Highlights -->
+        <div class="case-study-details">
+          <!-- Deliverable 1 -->
+          <div class="cs-deliverable-card active-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 0.5rem;">
+              <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--accent-emerald); font-family: 'JetBrains Mono', monospace;">DELIVERABLE 1 · SLIDE DECK &amp; PLAN</span>
+              <span class="badge" style="background: rgba(16, 185, 129, 0.2); color: #10b981; font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px;">Verified</span>
+            </div>
+            <div style="font-size: 1.1rem; font-weight: 800; color: #fff; margin-bottom: 0.4rem;">The Brand Plan (16:9 Widescreen Slides)</div>
+            <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 1rem;">
+              Complete 8-slide executive presentation covering Part A (Flashcards Diagnosis &amp; 5 Levers), Part B (Parts of Speech 12-Pack Re-Engineering), and Part C (Catalog Architecture &amp; 7:00 AM AI Brief).
+            </p>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+              <a href="assets/Hadley_Designs_Brand_Plan_Slides.pdf" target="_blank" class="btn btn-amazon" style="font-size: 0.82rem; padding: 0.5rem 1rem;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                View Slide Deck (PDF)
+              </a>
+            </div>
+          </div>
+
+          <!-- Key Commitments -->
+          <div class="cs-deliverable-card">
+            <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--accent-amazon); font-family: 'JetBrains Mono', monospace; margin-bottom: 0.5rem;">STRATEGIC 90-DAY OUTCOME COMMITMENTS</div>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.86rem; color: var(--text-main);">
+              <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>Compress TACoS from 37.3% to &lt;20%:</strong> Eliminate PPC addiction, harvest exact keywords, and prune 59% ACoS broad waste.</span>
+              </li>
+              <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>Flip Organic Sales to &gt;65%:</strong> Zero out stockouts with 45-day buffers and lift conversion to 22%+ with A+ content.</span>
+              </li>
+              <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>12-Pack Anchor Chart Overhaul:</strong> Shift from single sheet ($2.36 margin) to $22.99 12-pack generating <strong>$9.55 margin (41.5%)</strong>.</span>
+              </li>
+              <li style="display: flex; gap: 0.5rem; align-items: flex-start;">
+                <span style="color: var(--accent-emerald);">✔</span>
+                <span><strong>Automated 7:00 AM Brief:</strong> Scale 300+ ASINs with exception-only Slack digests and SP-API daily P&amp;L pipelines.</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
