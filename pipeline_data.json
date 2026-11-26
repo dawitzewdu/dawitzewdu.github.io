@@ -17,398 +17,505 @@
     }
   },
   "stats": {
-    "total": 54,
-    "applied": 43,
+    "total": 58,
+    "applied": 46,
     "calibrated": 4,
-    "skipped": 7
+    "skipped": 7,
+    "followups_due": 25,
+    "velocity_pct": 79,
+    "staged_count": 0,
+    "pending_count": 10,
+    "platforms_count": 7
   },
+  "bot_status": {
+    "daemon_active": true,
+    "staged_count": 0,
+    "mode": "Local Playwright Daemon (Live)"
+  },
+  "staged": [],
   "applications": [
+    {
+      "date": "2026-11-26",
+      "company": "Prasino",
+      "title": "Market Sales Representative",
+      "url": "https://ethiojobs.net/job/ABKBbKr4au-market-sales-representative",
+      "status": "Applied",
+      "platform": "Ethiojobs"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "OnTheGoSystems",
+      "title": "Content Marketing Lead",
+      "url": "https://forms.gle/SxiLBASsobx12ycr5",
+      "status": "Applied",
+      "platform": "Google Forms"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "Bybit",
+      "title": "P2P Regional Operations - Africa",
+      "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/5029234101",
+      "status": "Applied",
+      "platform": "Greenhouse"
+    },
+    {
+      "date": "2026-11-25",
+      "company": "Bybit",
+      "title": "Asset/Wallet Operations",
+      "url": "https://job-boards.eu.greenhouse.io/bybit/jobs/5029213101",
+      "status": "Applied",
+      "platform": "Greenhouse"
+    },
     {
       "date": "2026-11-23",
       "company": "Nur Hussin Yassin Importer",
       "title": "IT Specialist /ERP Specialist",
       "url": "https://ethiojobs.net/job/6IM3eABhYj-it-specialist-erp-specialist",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-23",
       "company": "ECC St Gabriel Catholic Health Center",
       "title": "(TOR) Consultancy Service for the Evaluation of the Facility-Based and Outreach Public Health Project",
       "url": "https://ethiojobs.net/job/YR2NQHJjZ1-tor-consultancy-service-for-the-evaluation-of-the-facility-based-and-outreach-public-health-project",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-23",
       "company": "Zemen Bank S.C.",
       "title": "Manager Software Development and Integration Division",
       "url": "https://ethiojobs.net/job/9ZJRF88Gfp-manager-software-development-and-integration-division",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-23",
       "company": "Stand by Me",
       "title": "Director of Child Care",
       "url": "https://ethiojobs.net/job/hY8pSvtfxO-director-of-child-care",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-23",
       "company": "Mercy Corps Ethiopia",
       "title": "Market System Development Advisor",
       "url": "https://ethiojobs.net/job/qevDQj99Tm-market-system-development-advisor",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "Theday Agro Industry PLC",
       "title": "Local and Export Marketing Officer",
       "url": "https://ethiojobs.net/job/5oF52MguM6-local-and-export-marketing-officer",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
-      "date": "2026-11-22",
+      "date": "2026-11-24",
       "company": "Go Super App (Bridge Technologies)",
       "title": "Corporate Sales and Account Lead",
       "url": "https://ethiojobs.net/job/u6bJaJvyxe-corporate-sales-and-account-lead",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "Theday Agro Industry PLC",
       "title": "Monitoring Evaluation and Learning (MEL) Officer",
       "url": "https://ethiojobs.net/job/975aYKBZLw-monitoring-evaluation-and-learning-mel-officer",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "Population Services International (PSI)",
       "title": "Coordinator - Grants Contract and Compliance",
       "url": "https://ethiojobs.net/job/bDS4kJW4RZ-coordinator-grants-contract-and-compliance",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "All Tech Business PLC (AllTech)",
       "title": "Business Development Manager",
       "url": "https://ethiojobs.net/job/klOTcgziVP-business-development-manager",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "BESYS Technologies PLC",
       "title": "Project Manager",
       "url": "https://ethiojobs.net/job/4Rq0d8Q9o8-project-manager",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "Nexus Ethiopia",
       "title": "Communications and Digital Media Specialist",
       "url": "https://ethiojobs.net/job/975aYKBZLw-communications-and-digital-media-specialist",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "Population Services International (PSI)",
       "title": "Project Manager  Nutrition Market System and Demand Generation",
       "url": "https://ethiojobs.net/job/wSwDnDrp9p-project-manager-nutrition-market-system-and-demand-generation",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-22",
       "company": "Deserts Digital O",
       "title": "Social Media Executive (B2B Growth & Brand Presence)",
       "url": "https://wellfound.com/jobs/4678004-social-media-executive-b2b-growth-brand-presence",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-22",
       "company": "ABIS Marketing & Events",
       "title": "Senior Marketing Manager",
       "url": "https://www.linkedin.com/jobs/view/4493353985/",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-22",
       "company": "BIGO",
       "title": "Marketing Specialist (IMO-Ethiopia)",
       "url": "https://www.linkedin.com/jobs/view/4486369386/",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-22",
       "company": "Verra",
       "title": "Project Reviewer / Standards Evaluation (General Inquiries)",
       "url": "https://ats.rippling.com/verra-opportunities/jobs/2d68a835-14f4-45e5-8d56-c2612c52881b",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-19",
       "company": "Huzzle.com",
       "title": "Project Manager",
       "url": "https://www.linkedin.com/jobs/view/4415286353/",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-19",
       "company": "SYNCTHESIS",
       "title": "Country Lead",
       "url": "https://www.linkedin.com/jobs/view/4492457141/",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-19",
       "company": "Translayte",
       "title": "Marketing Lead",
       "url": "https://wellfound.com/jobs/4779088-marketing-lead",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-19",
       "company": "Fundflow",
       "title": "Research & Content Associate (Remote)",
       "url": "https://wellfound.com/jobs/4860605-research-content-associate-remote",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-19",
       "company": "Lemon.io",
       "title": "Growth Manager (Supply)",
       "url": "https://jobs.ashbyhq.com/lemon-io/c4e73dfc-3fd3-4e3d-a400-fd2588df7d1f/application",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ashby"
     },
     {
       "date": "2026-11-19",
       "company": "OnTheGoSystems (WPML)",
       "title": "Content Marketing Lead",
       "url": "https://forms.gle/Qkt4u9AnovW3hoBA7",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Google Forms"
     },
     {
       "date": "2026-11-19",
       "company": "Plan International AU Liaison Office",
       "title": "Communications,Media and Advocacy Officer",
       "url": "https://ethiojobs.net/job/KCBlrifxXO-communications-media-and-advocacy-officer",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-19",
       "company": "Hadley Designs LLC",
       "title": "Amazon Brand Manager",
       "url": "https://apply.workable.com/hadley-designs/j/0B5D0B56B1",
-      "status": "Applied"
+      "status": "Case Study Submitted (Google Form + Email | $20/hr)",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-19",
       "company": "Commercial Transport & Logistics Services",
       "title": "\u12e8\u1225\u122b \u12ad\u1295\u12cd\u1295 \u12a0\u1235\u1270\u12f3\u12f3\u122a (Operations Manager)",
       "url": "https://afriworket.com/jobs/4b96532c-1a73-47e2-b804-80e80d150a6e",
-      "status": "Calibrated / Staged for Review"
+      "status": "Calibrated / Staged for Review",
+      "platform": "Afriwork"
     },
     {
       "date": "2026-11-19",
       "company": "Selam Fruits Association",
       "title": "Project Manager",
       "url": "https://afriworket.com/jobs/51e79b87-7e08-4595-81c0-07a282f8341c",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Afriwork"
     },
     {
       "date": "2026-11-18",
       "company": "CoinStats",
       "title": "Social Media Manager for X",
       "url": "https://jobs.smartrecruiters.com/CoinStats/744000108761590-social-media-manager-for-x",
-      "status": "Calibrated / Staged for Review"
+      "status": "Calibrated / Staged for Review",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-18",
       "company": "Private Creative Agency (@A_zmach)",
       "title": "Marketing Specialist (LinkedIn & X/Twitter),B2B Growth Specialist",
       "url": "https://afriworket.com/jobs/efaba7de-a0ee-4b7b-b400-976e35df87ea",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Afriwork"
     },
     {
       "date": "2026-11-18",
       "company": "Icarus Digital Marketing",
       "title": "Performance Creative Strategist and AI Producer",
       "url": "https://weworkremotely.com/remote-jobs/icarus-digital-marketing-performance-creative-strategist-and-ai-producer",
-      "status": "Skipped - Location Mismatch (GeoLocked: Ethiopia Excluded)"
+      "status": "Skipped - Location Mismatch (GeoLocked: Ethiopia Excluded)",
+      "platform": "We Work Remotely"
     },
     {
       "date": "2026-11-18",
       "company": "Private Client (Eyosiyas Wogayehu)",
       "title": "Social Media Manager (Twitter)",
       "url": "https://afriworket.com/jobs/354b24fb-bb3b-4959-a32e-dcb9cabedec1",
-      "status": "Calibrated / Staged for Review"
+      "status": "Calibrated / Staged for Review",
+      "platform": "Afriwork"
     },
     {
       "date": "2026-11-17",
       "company": "CapsLock",
       "title": "Creative Marketing Project Coordinator",
       "url": "https://weworkremotely.com/remote-jobs/capslock-creative-marketing-project-coordinator-1",
-      "status": "Calibrated / Staged for Review"
+      "status": "Calibrated / Staged for Review",
+      "platform": "We Work Remotely"
     },
     {
       "date": "2026-11-15",
       "company": "Private Client / Freelance Ethiopia",
       "title": "Research specialist and Administrative support (Expert only)",
       "url": "https://afriworket.com/jobs/24dc511e-afdb-4863-9782-cbf4d4cad444",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Afriwork"
     },
     {
       "date": "2026-11-15",
       "company": "Freebird",
       "title": "Senior Creative Strategy Lead",
       "url": "https://jobs.workable.com/view/wWmEz8Tp9CXsL1mwcT3zwX/remote-senior-creative-strategy-lead-in-united-states-at-freebird",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-15",
       "company": "silverorange",
       "title": "Director of Business Development",
       "url": "https://weworkremotely.com/remote-jobs/silverorange-director-of-business-development",
-      "status": "Skipped - Location Mismatch (Canada Eligibility Required)"
+      "status": "Skipped - Location Mismatch (Canada Eligibility Required)",
+      "platform": "We Work Remotely"
     },
     {
       "date": "2026-11-15",
       "company": "National Marketers PLC",
       "title": "Social Media Manager",
       "url": "https://forms.gle/b5H27QksdKfMvFid7",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Google Forms"
     },
     {
       "date": "2026-11-15",
       "company": "OnePay",
       "title": "Content Writer (AEO / SEO)",
       "url": "https://digitalsolutiontech.in/job/content-writer-aeo-seo-remote-job-in-usa-onepay-hiring/",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Direct Portal"
     },
     {
       "date": "2026-11-15",
       "company": "Reframe Space Inc.",
       "title": "Digital Marketing - Organic Growth and Lead Generation Specialist",
       "url": "https://weworkremotely.com/remote-jobs/reframe-space-digital-marketing-organic-growth-and-lead-generation-specialist",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "We Work Remotely"
     },
     {
       "date": "2026-11-15",
       "company": "SOS Children's Villages in Ethiopia",
       "title": "Communications Lead - iWork Programme",
       "url": "https://ethiojobs.net/job/57YsagoCYl-communications-lead-iwork-programme",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Eldad Trading PLC",
       "title": "Sales Agent & Distributor",
       "url": "https://afriworket.com/jobs/11d47607-8d4d-4dcd-aa4a-f52d5a9a55e6",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Afriwork"
     },
     {
       "date": "2026-11-15",
       "company": "Selam Motors / Tekle Tikue Import & Export",
       "title": "Social Media Marketing Expert",
       "url": "https://ethiojobs.net/job/1y22ak5dRn-social-media-marketing-expert",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Belaya Industrial PLC",
       "title": "Marketing Manager",
       "url": "https://ethiojobs.net/job/uZ6h61nfoJ-marketing-manager",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "JSI Research & Training Institute,Inc.",
       "title": "Field Office Manager",
       "url": "https://ethiojobs.net/job/f0gG0nozOX-field-office-manager",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Bilcor Institute of Leadership Coaching and Research",
       "title": "Marketing Manager",
       "url": "https://ethiojobs.net/job/lUcH3qLfNN-marketing-manager",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "SOS Children's Villages in Ethiopia",
       "title": "Gender and Safeguarding Manager - i work program",
       "url": "https://ethiojobs.net/job/64GFUVHNj6-gender-and-safeguarding-manager-i-work-program",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Company",
       "title": "Customer service Supervisor",
       "url": "https://ethiojobs.net/job/yqDA5SMdLH-customer-service-supervisor",
-      "status": "Skipped - Location Mismatch (Excluded Region (Diredawa))"
+      "status": "Skipped - Location Mismatch (Excluded Region (Diredawa))",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Company",
       "title": "casher",
       "url": "https://ethiojobs.net/job/FdHS6ugdSK-casher",
-      "status": "Skipped - Location Mismatch (Excluded Region (Diredawa))"
+      "status": "Skipped - Location Mismatch (Excluded Region (Diredawa))",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Company",
       "title": "Customer service officer",
       "url": "https://ethiojobs.net/job/UzmiyN6cUX-customer-service-officer",
-      "status": "Skipped - Location Mismatch (Excluded Region (Diredawa))"
+      "status": "Skipped - Location Mismatch (Excluded Region (Diredawa))",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Company",
       "title": "Position",
       "url": "https://ethiojobs.net/job/qevDQj99Tm-market-system-development-advisor",
-      "status": "Skipped - Location Mismatch (No Location Specified)"
+      "status": "Skipped - Location Mismatch (No Location Specified)",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "Company",
       "title": "Emergency Project Coordinator",
       "url": "https://ethiojobs.net/job/TdJCqLhS7o-emergency-project-coordinator",
-      "status": "Skipped - Location Mismatch (Excluded Region (Afar))"
+      "status": "Skipped - Location Mismatch (Excluded Region (Afar))",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "ProInvest Capital PLC / The Ultimate Insurance Brokers",
       "title": "Marketing and Business Development Officer",
       "url": "https://ethiojobs.net/job/2kTqrgmIjn-marketing-and-business-development-officer",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-15",
       "company": "International Rescue Committee (IRC)",
       "title": "Business Development Coordinator",
       "url": "https://ethiojobs.net/job/xANHnb1kZ4-business-development-coordinator",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-14",
       "company": "Plan International",
       "title": "Emergency Project Coordinator - ECHO-funded Project",
       "url": "https://ethiojobs.net/job/TdJCqLhS7o-emergency-project-coordinator",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     },
     {
       "date": "2026-11-14",
       "company": "Kerchanshe Trading Company",
       "title": "Project Financing,Cost Planning & Controlling Specialist",
       "url": "https://ethiojobs.net/job/f98QnihTUl-project-financing-cost-planning-controlling-specialist",
-      "status": "Applied"
+      "status": "Applied",
+      "platform": "Ethiojobs"
     }
   ],
   "platforms": [
-    "Ethiojobs",
-    "RemoteOK",
-    "Jobicy",
-    "We Work Remotely",
     "Afriwork",
-    "Telegram Channels"
+    "Ashby",
+    "Direct Portal",
+    "Ethiojobs",
+    "Google Forms",
+    "Greenhouse",
+    "We Work Remotely"
   ],
-  "updated_at": "2026-11-23 19:21:52"
+  "platform_breakdown": {
+    "Ethiojobs": 30,
+    "Afriwork": 6,
+    "We Work Remotely": 4,
+    "Direct Portal": 12,
+    "Google Forms": 3,
+    "Ashby": 1,
+    "Greenhouse": 2
+  },
+  "updated_at": "2026-11-26 16:43:49"
 }
